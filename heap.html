@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Table with JavaScript</title>
+</head>
+<h1>javascript draw a table</h1>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 500px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<table>
+  <tr>
+  </tr>
+  <script>
+    let count = 1;
+    for (let i = 0; i < 3; i++) {
+      document.write("<tr>");
+      for (let j = 0; j < 5; j++) {
+        document.write("<td>" + count++ + "</td>");
+      }
+      document.write("</tr>");
+    }
+  </script>
+</table>
+</body>
+</html>
